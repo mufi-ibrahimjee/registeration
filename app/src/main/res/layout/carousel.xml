@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -15,7 +15,22 @@
         app:icvp_center_page_scale_offset="5dp"
         app:icvp_max_page_scale="0.8"
         app:icvp_min_page_scale="0.55"
-        app:icvp_medium_scaled="false"
+        app:icvp_medium_scaled="false" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
 
-    />
-</RelativeLayout>
+    <TextView
+        android:id="@+id/txt_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:textColor="#005fb0"
+        android:textSize="36sp"
+        android:typeface="sans"
+        tools:text="Delivery"/>
+    </LinearLayout>
+</FrameLayout>
